@@ -1,5 +1,4 @@
 from flask import Flask,render_template,redirect,url_for,request
-from flask_sqlalchemy import SQLAlchemy
 import pickle
 model =pickle.load(open('lr_classifier.pkl','rb'))
 app= Flask(__name__, template_folder="templates")
